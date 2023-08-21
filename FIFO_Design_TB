@@ -8,7 +8,7 @@ integer count=0,i=0;
 
 reg [7:0] data [15:0];
 
-async_fifo DUT(.clear(clear),.wr_clk(wr_clk),.rd_clk(rd_clk),.full(full),.empty(empty),.data_in(data_in),.data_out(data_out));
+sync_fifo DUT(.clear(clear),.wr_clk(wr_clk),.rd_clk(rd_clk),.full(full),.empty(empty),.data_in(data_in),.data_out(data_out));
 
 initial
 begin
