@@ -1,4 +1,4 @@
-module async_fifo(clear,wr_clk,rd_clk,full,empty,data_in,data_out);
+module sync_fifo(clear,wr_clk,rd_clk,full,empty,data_in,data_out);
 
 input wr_clk,rd_clk,clear;
 input [7:0] data_in;
